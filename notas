@@ -1,0 +1,38 @@
+        <div class="contenedor_formulario_iniciarsesion_IR">
+            <form class="formulario_iniciar_sesion_IR">
+                <div class="seccion_titulo_iniciarsesion_IR">
+                    <p class="texto_titulo_formulario_IR">Nuevo registro</p>
+                </div>
+
+                <div class="seccion_campos_formullario_R">
+                    
+                    <input type="text" placeholder="Usuario del administrador principal" class="input_R">
+
+                    <input type="text" placeholder="Nombre del administrador principal" class="input_R" name="campo_nombre_admin">
+                    <input type="text" placeholder="Puesto" class="input_R" name="campo_puesto">
+                    <input type="text" placeholder="Nombre de la empresa o negocio" class="input_R2" name="campo_nombre_empresa">
+
+                    <div class="seccion_boton_IR">
+                        <input type="submit" value="Registrar" class="input_submit_IR">
+                    </div>
+                </div>
+
+                <div class="seccion_mini_opciones_IR">
+                    <div class="seccion_mini_opciones_izquierda_IR">
+                    </div>
+                    <div class="seccion_mini_opciones_center_IR">
+                    </div>
+                    <div class="seccion_mini_opciones_derecha_IR">
+                        <p class="mini_opciones_IR">Regístrate</p>
+                        <p class="mini_opciones_IR">¿No puedes acceder?</p>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+
+
+
+        $query = mysqli_query($conn,"SELECT * FROM usuarios WHERE nombre_de_usuario_admin_principal = '".$varusuarioadmin."' and contrasena_de_usuario_admin_principal '".$varcontrasena1."' and contrasena2_de_usuario_admin_principal = '".$varcontrasena2."'");
+$nr mysqli_num_rows($query);
